@@ -1,0 +1,15 @@
+# written on python 3.8.0 (might not work with other versions)
+# must be transfered for optimal performance
+# internet connection and text to speech is required for win32com
+from tkinter import *
+from tkinter import filedialog
+from tkinter import ttk
+from ttkthemes import themed_tk as tk
+import tkinter.messagebox
+
+from random import choice
+import time
+import datetime
+
+import win32com.client as wincl
+speak = wincl.Dispatch("SAPI.SpVoice")
